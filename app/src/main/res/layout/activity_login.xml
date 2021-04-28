@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    Tanggal Pengerjaan      : 28 April 2021
+    Deskripsi Pengerjaan    : Membuat Project Aplikasi Blood Share
+    NIM                     : 10118077
+    Nama                    : Noerkhalidah Miskiyah
+    Kelas                   : IF-2
+-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ic_welcome_logo" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_below="@id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:ems="17"
+        android:inputType="textPersonName"
+        android:hint="Username"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_below="@id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:ems="17"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white"/>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/background_button"
+        android:text="LOGIN"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/or"
+        android:layout_below="@id/bt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:text="OR"/>
+
+    <Button
+        android:id="@+id/facebook"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/background_button"
+        android:drawableStart="@drawable/ic_welcome_fb_login"
+        android:drawablePadding="-80dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:paddingStart="30dp"
+        android:text="CONNECT WITH FACEBOOK"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/doesnt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="doesn't have account?"
+        android:textAlignment="textEnd"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/register"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/facebook"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="21dp"
+        android:layout_toRightOf="@id/doesnt"
+        android:onClick="register"
+        android:text="REGISTER"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+</RelativeLayout>
